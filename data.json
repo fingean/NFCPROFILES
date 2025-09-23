@@ -1,0 +1,28 @@
+{
+  "profiles": {
+    "SH001": {
+      "name": "ALISSON DAYANA NAVARRO RODRIGUEZ",
+      "photo": "img/foto_SH001.jpg",
+      "linkedin": "https://www.linkedin.com/in/alisson-dayana-navarro-rodriguez-7184b5261",
+      "instagram": "https://www.instagram.com/dinalisauroous?igsh=dHV6NDZiY3Q2OGsz",
+      "phone": "+57 3128350688",
+      "email": "anavarr36555@universidadean.edu.co"
+    },
+    "SH002": {
+      "name": "Nombre Dos",
+      "photo": "img/foto_SH002.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH002",
+      "instagram": "https://www.instagram.com/usuarioSH002",
+      "phone": "+57 301 1111111",
+      "email": "usuario2@ejemplo.com"
+    }
+  },
+  "default": {
+    "name": "Nombre Por Defecto",
+    "photo": "img/foto_default.jpg",
+    "linkedin": "https://www.linkedin.com/in/usuariodefault",
+    "instagram": "https://www.instagram.com/usuariodefault",
+    "phone": "+57 302 2222222",
+    "email": "default@ejemplo.com"
+  }
+}
