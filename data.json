@@ -32,7 +32,16 @@
       "instagram": "https://www.instagram.com/shumy2012sa?igsh=eXIwcDYyeXR2ZXRu",
       "phone": "+57 3105616417",
       "email": "spcristancho@universidadean.edu.co"
-    }
+      
+     }, 
+      "SH005": {
+      "name": "ALEXANDER GARCIA PEREZ ",
+      "photo": "img/foto_SH005.jpg",
+      "linkedin": "https://www.linkedin.com/in/alexander-garcia-perez/",
+      "instagram": "https://www.instagram.com/alxgarcia09?igsh=Y3hudmM0Z2xkbm94",
+      "phone": "+57 312 4478262",
+      "email": "Agarciap@universidadean.edu.co"
+    
   },
   "default": {
     "name": "Nombre Por Defecto",
