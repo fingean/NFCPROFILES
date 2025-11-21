@@ -17,6 +17,15 @@
       "email": "llpineiro@universidadean.edu.co"
     }
   },
+    "SH003": {
+    "name": "ANGIE JULIETH LOPEZ BOHORQUEZ",
+    "photo": "img/foto_SH003.jpg",
+    "linkedin": "www.linkedin.com/in/angie-julieth-lopez-bohorquez-1246561a7",
+    "instagram": "https://www.instagram.com/angvibes_23?igsh=MXdveG4zbXVuZ2FwdQ==",
+    "phone": "+57 3002490418",
+    "email personal": "ajlopez2328@gmail.com"
+    "email profesional": "ajlopezb@universidadean.edu.co.co"
+  },
   "default": {
     "name": "Nombre Por Defecto",
     "photo": "img/foto_default.jpg",
