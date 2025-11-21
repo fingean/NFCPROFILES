@@ -16,7 +16,6 @@
       "phone": "+57 300 000 0000",
       "email": "llpineiro@universidadean.edu.co"
     }
-  },
     "SH003": {
     "name": "ANGIE JULIETH LOPEZ BOHORQUEZ",
     "photo": "img/foto_SH003.jpg",
@@ -25,7 +24,7 @@
     "phone": "+57 3002490418",
     "email personal": "ajlopez2328@gmail.com"
     "email profesional": "ajlopezb@universidadean.edu.co.co"
-  },
+  }
   "default": {
     "name": "Nombre Por Defecto",
     "photo": "img/foto_default.jpg",
@@ -34,4 +33,4 @@
     "phone": "+57 302 2222222",
     "email": "default@ejemplo.com"
   }
-}
+},
