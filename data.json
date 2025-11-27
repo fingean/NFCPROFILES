@@ -4,7 +4,6 @@
       "name": "ALISSON DAYANA NAVARRO RODRIGUEZ",
       "photo": "img/foto_SH001.jpg",
       "linkedin": "https://www.linkedin.com/in/alisson-dayana-navarro-rodriguez-7184b5261",
-      "instagram": "https://www.instagram.com/dinalisauroous?igsh=dHV6NDZiY3Q2OGsz",
       "phone": "+57 3128350688",
       "email": "anavarr36555@universidadean.edu.co"
     },
@@ -12,7 +11,6 @@
       "name": "LORENA PIÑEIRO CORTES",
       "photo": "img/foto_SH002.jpg",
       "linkedin": "https://www.linkedin.com/in/lorena-pineiro-cortes",
-      "instagram": "https://www.instagram.com/usuarioSH002",
       "phone": "+57 3000000000",
       "email": "llpineiro@universidadean.edu.co"
     },
@@ -20,15 +18,13 @@
       "name": "ANGIE JULIETH LOPEZ BOHORQUEZ",
       "photo": "img/foto_SH003.jpg",
       "linkedin": "https://www.linkedin.com/in/angie-julieth-lopez-bohorquez-1246561a7",
-      "instagram": "https://www.instagram.com/angvibes_23",
       "phone": "+57 3002490418",
       "email": "ajlopez2328@gmail.com"
-      },
+    },
     "SH005": {
       "name": "ALEXANDER GARCIA PEREZ",
       "photo": "img/foto_SH005.jpg",
       "linkedin": "https://www.linkedin.com/in/alexander-garcia-perez/",
-      "instagram": "https://www.instagram.com/alxgarcia09?igsh=Y3hudmM0Z2xkbm94",
       "phone": "+57 3124478262",
       "email": "agarciap@universidadean.edu.co"
     },
@@ -36,11 +32,334 @@
       "name": "SANDRA PATRICIA CRISTANCHO BOTERO",
       "photo": "img/foto_SH004.jpg",
       "linkedin": "https://www.linkedin.com/in/spcbp/",
-      "instagram": "https://www.instagram.com/shumy2012sa?igsh=eXIwcDYyeXR2ZXRu",
       "phone": "+57 3105616417",
       "email": "spcristancho@universidadean.edu.co"
+    },
+
+    "SH006": {
+      "name": "NELSON ANTONIO MORENO MONSALVE",
+      "photo": "img/foto_SH006.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH006",
+      "phone": "+57 3112261377",
+      "email": "nmoreno@universidadean.edu.co"
+    },
+    "SH007": {
+      "name": "CARMEN ELIZABETH CHAPARRO MALAVER",
+      "photo": "img/foto_SH007.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH007",
+      "phone": "+57 3132855253",
+      "email": "cchaparro@universidadean.edu.co"
+    },
+    "SH008": {
+      "name": "EDICSON JAIR GIL ACOSTA",
+      "photo": "img/foto_SH008.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH008",
+      "phone": "+57 3005630015",
+      "email": "egil@universidadean.edu.co"
+    },
+    "SH009": {
+      "name": "JOSE DIVITT VELOSA GARCIA",
+      "photo": "img/foto_SH009.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH009",
+      "phone": "+57 3134523265",
+      "email": "jvelosa@universidadean.edu.co"
+    },
+    "SH010": {
+      "name": "JOHN JAIRO PORRAS VEGA",
+      "photo": "img/foto_SH010.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH010",
+      "phone": "+57 3014898408",
+      "email": "jjporras@universidadean.edu.co"
+    },
+    "SH011": {
+      "name": "PABLO CESAR OCAMPO VELEZ",
+      "photo": "img/foto_SH011.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH011",
+      "phone": "+57 3005564892",
+      "email": "pcocampo@universidadean.edu.co"
+    },
+    "SH012": {
+      "name": "ELIZABETH LEON VELASQUEZ",
+      "photo": "img/foto_SH012.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH012",
+      "phone": "+57 3004048255",
+      "email": "eleonv@universidadean.edu.co"
+    },
+    "SH013": {
+      "name": "SANDRA MARCELA DELGADO ORTIZ",
+      "photo": "img/foto_SH013.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH013",
+      "phone": "+57 3223096507",
+      "email": "smdelgado@universidadean.edu.co"
+    },
+    "SH014": {
+      "name": "JOSE ALEJANDRO MARTINEZ SEPULVEDA",
+      "photo": "img/foto_SH014.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH014",
+      "phone": "+57 3002122347",
+      "email": "jamartinez@universidadean.edu.co"
+    },
+    "SH015": {
+      "name": "LUZ MARIBEL GUEVARA ORTEGA",
+      "photo": "img/foto_SH015.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH015",
+      "phone": "+57 3134555659",
+      "email": "lmguevara@universidadean.edu.co"
+    },
+    "SH016": {
+      "name": "DIANA ANGELICA VARELA MARTINEZ",
+      "photo": "img/foto_SH016.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH016",
+      "phone": "+57 3007375426",
+      "email": "davarela@universidadean.edu.co"
+    },
+    "SH017": {
+      "name": "ADRIANA MALDONADO CURREA",
+      "photo": "img/foto_SH017.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH017",
+      "phone": "+57 3017718606",
+      "email": "amaldonadoc@universidadean.edu.co"
+    },
+    "SH018": {
+      "name": "ANTONIO RODRIGUEZ PEÑA",
+      "photo": "img/foto_SH018.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH018",
+      "phone": "+57 3102118141",
+      "email": "arodriguezp@universidadean.edu.co"
+    },
+    "SH019": {
+      "name": "LUIS ARMANDO COBO CAMPO",
+      "photo": "img/foto_SH019.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH019",
+      "phone": "+57 3017840087",
+      "email": "lacobo@universidadean.edu.co"
+    },
+    "SH020": {
+      "name": "JEFFREY LEON PULIDO",
+      "photo": "img/foto_SH020.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH020",
+      "phone": "+57 3142140306",
+      "email": "jleonp@universidadean.edu.co"
+    },
+    "SH021": {
+      "name": "MIGUEL ANGEL GONZALEZ CURBELO",
+      "photo": "img/foto_SH021.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH021",
+      "phone": "+57 3045453815",
+      "email": "magonzalez@universidadean.edu.co"
+    },
+    "SH022": {
+      "name": "ALIX ERICA ROJAS HERNANDEZ",
+      "photo": "img/foto_SH022.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH022",
+      "phone": "+57 3132628329",
+      "email": "aerojash@universidadean.edu.co"
+    },
+    "SH023": {
+      "name": "MAIRA ALEJANDRA GARCIA JARAMILLO",
+      "photo": "img/foto_SH023.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH023",
+      "phone": "+57 3175909851",
+      "email": "magarcia@universidadean.edu.co"
+    },
+    "SH024": {
+      "name": "CAROLINA MARIA LUQUE ZABALA",
+      "photo": "img/foto_SH024.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH024",
+      "phone": "+57 3204110573",
+      "email": "cluque2.d@universidadean.edu.co"
+    },
+    "SH025": {
+      "name": "DIANA MARIA GRAJALES MEDINA",
+      "photo": "img/foto_SH025.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH025",
+      "phone": "+57 3103916981",
+      "email": "dgrajal28174@universidadean.edu.co"
+    },
+    "SH026": {
+      "name": "LINA MARIA CHACON RIVERA",
+      "photo": "img/foto_SH026.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH026",
+      "phone": "+57 3153611827",
+      "email": "lmchacon@universidadean.edu.co"
+    },
+    "SH027": {
+      "name": "CESAR HERNANDO RINCON GONZALEZ",
+      "photo": "img/foto_SH027.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH027",
+      "phone": "+57 3002038677",
+      "email": "crincon2.d@universidadean.edu.co"
+    },
+    "SH028": {
+      "name": "MILTON JANUARIO RUEDA VARON",
+      "photo": "img/foto_SH028.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH028",
+      "phone": "+57 3008811573",
+      "email": "mramon.d@universidadean.edu.co"
+    },
+    "SH029": {
+      "name": "WILLIAM STIVE FAJARDO MORENO",
+      "photo": "img/foto_SH029.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH029",
+      "phone": "+57 3212402492",
+      "email": "wsfajardo@universidadean.edu.co"
+    },
+    "SH030": {
+      "name": "LEIDY NATALIA ZAPATA RESTREPO",
+      "photo": "img/foto_SH030.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH030",
+      "phone": "+57 3228572138",
+      "email": "lnzapata@universidadean.edu.co"
+    },
+    "SH031": {
+      "name": "MARIE JOSE CHERY LEAL",
+      "photo": "img/foto_SH031.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH031",
+      "phone": "+57 3013428719",
+      "email": "mjchery@universidadean.edu.co"
+    },
+    "SH032": {
+      "name": "JULIAN FELIPE SEGURA CONTRERAS",
+      "photo": "img/foto_SH032.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH032",
+      "phone": "+57 3214952419",
+      "email": "jfsegurac@universidadean.edu.co"
+    },
+    "SH033": {
+      "name": "DIANA PAOLA FIGUEROA HERNÁNDEZ",
+      "photo": "img/foto_SH033.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH033",
+      "phone": "+57 3142584692",
+      "email": "dpfigueroa@universidadean.edu.co"
+    },
+    "SH034": {
+      "name": "RICARDO ANDRES VILLALBA RIVERA",
+      "photo": "img/foto_SH034.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH034",
+      "phone": "+57 3017421228",
+      "email": "ravillalba@universidadean.edu.co"
+    },
+    "SH035": {
+      "name": "DIEGO ARMANDO GARCIA GARCIA",
+      "photo": "img/foto_SH035.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH035",
+      "phone": "+57 3046159066",
+      "email": "dagarcia@universidadean.edu.co"
+    },
+    "SH036": {
+      "name": "LUISA FERNANDA CARVAJAL DIAZ",
+      "photo": "img/foto_SH036.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH036",
+      "phone": "+57 3006798161",
+      "email": "lfcarvajal@universidadean.edu.co"
+    },
+    "SH037": {
+      "name": "PAOLA ANDREA ACEVEDO PABON",
+      "photo": "img/foto_SH037.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH037",
+      "phone": "+57 3043775435",
+      "email": "paacevedo@universidadean.edu.co"
+    },
+    "SH038": {
+      "name": "EMANUEL ELBERTO ORTIZ RUIZ",
+      "photo": "img/foto_SH038.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH038",
+      "phone": "+57 3504705764",
+      "email": "eeortiz@universidadean.edu.co"
+    },
+    "SH039": {
+      "name": "WILKEN GIUSSEPE RODRIGUEZ AMAYA",
+      "photo": "img/foto_SH039.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH039",
+      "phone": "+57 3118602197",
+      "email": "wgrodriguez@universidadean.edu.co"
+    },
+    "SH040": {
+      "name": "JOHANNA KARINA SOLANO MEZA",
+      "photo": "img/foto_SH040.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH040",
+      "phone": "+57 3006583770",
+      "email": "jksolano@universidadean.edu.co"
+    },
+    "SH041": {
+      "name": "ESTEFANIA MENDOZA RODRIGUEZ",
+      "photo": "img/foto_SH041.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH041",
+      "phone": "+57 3155018871",
+      "email": "esmendoza@universidadean.edu.co"
+    },
+    "SH042": {
+      "name": "DIANA CAROLINA BELTRAN PEÑA",
+      "photo": "img/foto_SH042.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH042",
+      "phone": "+57 3007671061",
+      "email": "dcbeltran@universidadean.edu.co"
+    },
+    "SH043": {
+      "name": "LINA MARIA RODRIGUEZ NIETO",
+      "photo": "img/foto_SH043.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH043",
+      "phone": "+57 3214150709",
+      "email": "lirodriguez@universidadean.edu.co"
+    },
+    "SH044": {
+      "name": "PAULA CAMILA SILVA GOMEZ",
+      "photo": "img/foto_SH044.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH044",
+      "phone": "+57 3192469052",
+      "email": "csilva@universidadean.edu.co"
+    },
+    "SH045": {
+      "name": "JOSE ALEXANDER FUENTES MONTOYA",
+      "photo": "img/foto_SH045.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH045",
+      "phone": "+57 3112476205",
+      "email": "jamontoya.d@universidadean.edu.co"
+    },
+    "SH046": {
+      "name": "JULIAN DANIEL TORRES VANEGAS",
+      "photo": "img/foto_SH046.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH046",
+      "phone": "+57 3107327779",
+      "email": "jdtorres@universidadean.edu.co"
+    },
+    "SH047": {
+      "name": "MAURICIO BOLIVAR RAMIREZ",
+      "photo": "img/foto_SH047.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH047",
+      "phone": "+57 3107593205",
+      "email": "jdtorres@universidadean.edu.co"
+    },
+    "SH048": {
+      "name": "WILLIAM LOPEZ CASTRILLON",
+      "photo": "img/foto_SH048.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH048",
+      "phone": "+57 3007028882",
+      "email": "wlopez@universidadean.edu.co"
+    },
+    "SH049": {
+      "name": "ZORAIMA OÑATE FLOREZ",
+      "photo": "img/foto_SH049.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH049",
+      "phone": "+57 3165683196",
+      "email": "zonate@universidadean.edu.co"
+    },
+    "SH050": {
+      "name": "JULIAN FERNANDO MUÑOZ ORDOÑEZ",
+      "photo": "img/foto_SH050.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH050",
+      "phone": "+57 3159278763",
+      "email": "jumunoz@universidadean.edu.co"
+    },
+    "SH051": {
+      "name": "RICHARD GOMEZ ROSSO",
+      "photo": "img/foto_SH051.jpg",
+      "linkedin": "https://www.linkedin.com/in/usuarioSH049",
+      "phone": "+57 3001141082",
+      "email": "rigomez@universidadean.edu.co"
     }
   },
+
   "default": {
     "name": "Nombre Por Defecto",
     "photo": "img/foto_default.jpg",
