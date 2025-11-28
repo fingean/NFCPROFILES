@@ -7,13 +7,13 @@
   <style>
     :root{
       --ean-green:#28a745;
-      --btn-green: rgba(40,167,69,0.85);
+      --btn-green: rgba(40,167,69,0.92);
       --btn-green-hover: rgba(40,167,69,1);
       --white:#ffffff;
       --muted:#6b6b6b;
       --card-shadow: 0 8px 20px rgba(0,0,0,0.12);
       --radius:18px;
-      --name-font-size:1.15rem;
+      --name-font-size:1.25rem; /* aumentado */
     }
 
     *{box-sizing:border-box;margin:0;padding:0}
@@ -22,11 +22,11 @@
     /* Barra superior - mayor altura para separar del nombre */
     .topbar{
       background:var(--ean-green);
-      padding:20px 20px 26px;        /* bottom padding mayor para separar */
+      padding:20px 20px 26px;
       display:flex;
       align-items:center;
       justify-content:space-between;
-      position:relative;            /* para poder centrar el titulo absolute */
+      position:relative;
     }
     .topbar .logo {
       height:62px;
@@ -45,7 +45,7 @@
       font-size:1.05rem;
       text-transform:uppercase;
       pointer-events:none;
-      opacity:0.95;
+      opacity:0.98;
     }
 
     /* Contenedor principal */
@@ -55,19 +55,22 @@
       padding: 8px 20px;
     }
 
-    /* Nombre: menos solapado y con mayor padding */
+    /* Nombre: ahora más visible (fondo más sólido, texto grande y sombra) */
     .name-card{
-      margin: -22px auto 18px; /* menor negativo para que no quede pegado */
+      margin: -28px auto 18px; /* ajustar separación */
       width: calc(100% - 40px);
-      background: rgba(40,167,69,0.14);
+      background: rgba(40,167,69,0.98); /* más opaco */
       border-radius: 999px;
-      padding: 16px 20px;
+      padding: 18px 20px;
       text-align:center;
-      font-weight:700;
+      font-weight:900;
       font-size:var(--name-font-size);
       color: var(--white);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-      line-height:1.25;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.14);
+      line-height:1.15;
+      text-transform:uppercase;
+      letter-spacing:0.6px;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.18);
     }
 
     /* Main content (white card) */
@@ -95,7 +98,7 @@
     .btn{
       display:flex;align-items:center;justify-content:center;gap:10px;
       background:var(--btn-green);color:var(--white);text-decoration:none;
-      padding:12px 14px;border-radius:999px;font-weight:700;font-size:1rem;
+      padding:14px 16px;border-radius:999px;font-weight:700;font-size:1.02rem;
       transition:transform .06s ease, background .12s ease; box-shadow: 0 6px 12px rgba(0,0,0,0.06);
     }
     .btn:active{transform:translateY(1px)}
@@ -110,12 +113,13 @@
     .spacer{height:6px}
 
     @media (max-width:440px){
+      :root{ --name-font-size:1.05rem }
       .wrapper{padding:12px}
       .topbar{padding:16px 14px 22px}
       .topbar .logo{height:54px}
-      .name-card{font-size:1rem;margin-top:-18px}
+      .name-card{font-size:var(--name-font-size);margin-top:-22px;padding:14px}
       .photo{width:78%}
-      .btn{font-size:0.98rem;padding:11px}
+      .btn{font-size:0.98rem;padding:12px}
     }
   </style>
 </head>
@@ -128,7 +132,7 @@
   </header>
 
   <main class="wrapper" role="main">
-    <!-- Nombre que ahora está más separado de la barra -->
+    <!-- Nombre que ahora está más separado y visible -->
     <div id="nameShell" class="name-card" aria-live="polite">Nombre Por Defecto</div>
 
     <section class="card" aria-label="Perfil">
@@ -142,9 +146,10 @@
           LinkedIn
         </a>
 
-        <a id="contactBtn" class="btn disabled" href="#" aria-label="Llamar">
+        <!-- Botón renombrado a "Celular" -->
+        <a id="contactBtn" class="btn disabled" href="#" aria-label="Llamar/Celular">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8V7l-3 2-2-1-2 1-2-1-2 1-2-1-2 1-3-2v1l3 2 2-1 2 1 2-1 2 1 2-1 2 1z"/></svg>
-          Contacto
+          Celular
         </a>
 
         <a id="emailBtn" class="btn disabled" href="#" aria-label="Enviar correo">
