@@ -1,181 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
   <title>Contacto</title>
   <style>
-    /* Reset básico */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { width:100%; height:100%; font-family: Arial, sans-serif; background-color:#28a745; color:#fff; }
-    .container {
-      max-width: 380px; margin: auto; padding: 20px;
-      display:flex; flex-direction:column; align-items:center;
-      min-height:100vh; justify-content:space-between;
+    :root{
+      --ean-green:#28a745;
+      --btn-green: rgba(40,167,69,0.85);
+      --btn-green-hover: rgba(40,167,69,1);
+      --white:#ffffff;
+      --muted:#6b6b6b;
+      --card-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      --radius:18px;
     }
-    .top {
-      width:100%;
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family: "Arial",sans-serif;background:var(--white);color:#111}
+
+    /* Barra superior */
+    .topbar{
+      background:var(--ean-green);
+      padding:18px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
     }
-    .logos { width:100%; display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
-    .logos img { height:50px; width:auto; }
-    .name-bar {
-      background-color: rgba(255,255,255,0.2); padding:10px 20px; border-radius:20px;
-      margin-bottom:20px; font-size:1.2rem; text-align:center; width:100%;
+    .topbar .logo {
+      height:64px;
+      width:auto;
+      display:block;
     }
-    .photo { width:60%; max-width:200px; aspect-ratio:3/4; border-radius:20px; overflow:hidden; margin: 0 auto 20px; }
-    .photo img { width:100%; height:100%; object-fit:cover; display:block;}
-    .buttons { width:100%; display:flex; flex-direction:column; gap:12px; margin-bottom:10px; }
-    .btn {
-      background-color: rgba(255,255,255,0.3); color:#fff; text-decoration:none; padding:12px;
-      border-radius:20px; display:flex; align-items:center; justify-content:center;
-      font-size:1rem; transition: background-color .2s; gap:8px;
+
+    /* Contenedor principal */
+    .wrapper{
+      max-width:420px;
+      margin: 20px auto 40px;
+      padding: 20px;
     }
-    .btn:hover { background-color: rgba(255,255,255,0.5); }
-    .btn .icon { width:20px; height:20px; display:inline-block; fill:#ffffff; }
-    .contact-info { margin-top:6px; text-align:center; font-size:0.9rem; word-break:break-word; color:#fff; }
-    @media (max-width:400px) {
-      .name-bar { font-size:1rem; }
-      .btn { padding:10px; font-size:0.95rem; }
+
+    .name-card{
+      margin: -40px auto 18px; /* upa to overlap with topbar */
+      width: calc(100% - 40px);
+      background: rgba(40,167,69,0.14);
+      border-radius: 999px;
+      padding: 16px 20px;
+      text-align:center;
+      font-weight:700;
+      font-size:1.15rem;
+      color: var(--white);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    }
+
+    /* Main content (white card) */
+    .card{
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px 18px 32px;
+      box-shadow: var(--card-shadow);
+      text-align:center;
+    }
+
+    .photo {
+      width:70%;
+      max-width:300px;
+      aspect-ratio: 3/4;
+      margin:0 auto 20px;
+      border-radius: 16px;
+      overflow:hidden;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+      background:#f4f4f4;
+    }
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+    .buttons{display:flex;flex-direction:column;gap:14px;margin-top:6px}
+    .btn{
+      display:flex;align-items:center;justify-content:center;gap:10px;
+      background:var(--btn-green);color:var(--white);text-decoration:none;
+      padding:12px 14px;border-radius:999px;font-weight:700;font-size:1rem;
+      transition:transform .06s ease, background .12s ease; box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+    }
+    .btn:active{transform:translateY(1px)}
+    .btn:hover{background:var(--btn-green-hover)}
+
+    .btn.disabled{
+      opacity:0.45;pointer-events:none;background: rgba(40,167,69,0.45);
+    }
+
+    .btn .icon{width:20px;height:20px;display:inline-block;fill:#fff}
+
+    /* small footer spacing (we removed contact info area visual) */
+    .spacer{height:6px}
+
+    @media (max-width:440px){
+      .wrapper{padding:12px}
+      .topbar{padding:14px}
+      .topbar .logo{height:56px}
+      .name-card{font-size:1rem;margin-top:-34px}
+      .photo{width:78%}
+      .btn{font-size:0.98rem;padding:11px}
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="top">
-      <div class="logos">
-        <img src="img/logo_ean.png" alt="Logo EAN" />
-        <img src="img/logo_facultad.png" alt="Logo Facultad" />
-      </div>
+  <!-- TOP BAR con logos -->
+  <header class="topbar" role="banner" aria-label="Cabecera">
+    <img src="img/logo_ean.png" alt="Logo EAN" class="logo" />
+    <img src="img/logo_facultad.png" alt="Logo Facultad" class="logo" />
+  </header>
 
-      <div class="name-bar" id="nameBar">Nombre</div>
+  <main class="wrapper" role="main">
+    <!-- Nombre que queda sobre tarjeta -->
+    <div id="nameShell" class="name-card" aria-live="polite">Nombre Por Defecto</div>
 
+    <section class="card" aria-label="Perfil">
       <div class="photo" id="photoContainer">
-        <img src="img/foto_default.jpg" alt="Foto de perfil" id="photo" />
+        <img id="photo" src="img/foto_default.jpg" alt="Foto de perfil" />
       </div>
-    </div>
 
-    <div class="buttons">
-      <a id="linkedinBtn" class="btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Visitar LinkedIn">
-        <!-- ícono LinkedIn (simple) -->
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.5S3.34 9.5 4.98 9.5 7.96 8.16 7.96 6.5 6.62 3.5 4.98 3.5zM2.4 21h5.16V10.5H2.4V21zM9.6 10.5V21h5.16V15.3c0-3.3 4.32-3.6 4.32 0V21H24V13.5c0-6.54-7.44-6.3-9.6-3.09V10.5H9.6z"/></svg>
-        LinkedIn
-      </a>
+      <div class="buttons" id="buttonsContainer">
+        <a id="linkedinBtn" class="btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.5S3.34 9.5 4.98 9.5 7.96 8.16 7.96 6.5 6.62 3.5 4.98 3.5zM2.4 21h5.16V10.5H2.4V21zM9.6 10.5V21h5.16V15.3c0-3.3 4.32-3.6 4.32 0V21H24V13.5c0-6.54-7.44-6.3-9.6-3.09V10.5H9.6z"/></svg>
+          LinkedIn
+        </a>
 
-      <a id="contactBtn" class="btn" href="#" aria-label="Llamar o enviar correo">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8V7l-3 2-2-1-2 1-2-1-2 1-2-1-2 1-3-2v1l3 2 2-1 2 1 2-1 2 1 2-1 2 1z"/></svg>
-        Contacto
-      </a>
+        <a id="contactBtn" class="btn disabled" href="#" aria-label="Llamar">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8V7l-3 2-2-1-2 1-2-1-2 1-2-1-2 1-3-2v1l3 2 2-1 2 1 2-1 2 1 2-1 2 1z"/></svg>
+          Contacto
+        </a>
 
-      <a id="vcardBtn" class="btn" href="#" aria-label="Guardar contacto">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 2H8c-1.1 0-2 .9-2 2v4h2V4h12v16H8v-4H6v4c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM11 14l-3-3 1.41-1.41L11 11.17l4.59-4.59L17 8l-6 6z"/></svg>
-        Guardar contacto
-      </a>
-    </div>
+        <a id="emailBtn" class="btn disabled" href="#" aria-label="Enviar correo">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 1.99 2H20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg>
+          Email
+        </a>
+      </div>
 
-    <div class="contact-info" id="contactInfo">
-      <!-- teléfono y correo aparecerán aquí -->
-    </div>
-  </div>
+      <div class="spacer" aria-hidden="true"></div>
+    </section>
+  </main>
 
   <script>
-    // RUTA al archivo data.json (ajusta si lo dejas en img/)
+    /* Robust loader + render:
+       - Examina data.json (soporta either: { "profiles": {...} } OR top-level { "SH001": {...} })
+       - Rellena LinkedIn, Contacto (tel) y Email (mailto).
+       - Si un dato falta, el botón correspondiente se desactiva (no rompe).
+    */
+
     const DATA_JSON = 'data.json';
     const DEFAULT_ID = 'SH001';
 
-    // Helper para obtener elemento de forma segura
-    function safeGet(id) {
-      return document.getElementById(id) || null;
-    }
+    function safeGet(id){ return document.getElementById(id) || null; }
+    function getIdFromUrl(){ const p = new URLSearchParams(window.location.search); return p.get('id') || DEFAULT_ID; }
 
-    function getIdFromUrl() {
-      const params = new URLSearchParams(window.location.search);
-      return params.get('id') || DEFAULT_ID;
-    }
-
-    // Renderiza el perfil en la página (protege elementos que no existan)
-    function renderProfile(profile) {
-      if (!profile) profile = { name: 'Nombre Por Defecto', photo: 'img/foto_default.jpg', linkedin:'#', phone:'', email:'' };
-
-      const nameBar = safeGet('nameBar');
-      if (nameBar) nameBar.innerText = profile.name || '';
-
-      const photo = safeGet('photo');
-      if (photo) {
-        photo.src = profile.photo || 'img/foto_default.jpg';
-        photo.alt = 'Foto de ' + (profile.name || 'perfil');
-      }
-
-      const linkedinBtn = safeGet('linkedinBtn');
-      if (linkedinBtn) linkedinBtn.href = profile.linkedin || '#';
-
-      const contactBtn = safeGet('contactBtn');
-      if (contactBtn) {
-        if (profile.phone) contactBtn.href = 'tel:' + profile.phone.replace(/\s+/g,'');
-        else if (profile.email) contactBtn.href = 'mailto:' + profile.email;
-        else contactBtn.href = '#';
-      }
-
-      const ci = safeGet('contactInfo');
-      if (ci) ci.innerHTML = (profile.phone ? ('Tel: ' + profile.phone + '<br>') : '') + (profile.email ? ('Email: ' + profile.email) : '');
-
-      // vCard: protegemos para que no rompa si falta el botón
-      const vcardBtn = safeGet('vcardBtn');
-      if (vcardBtn) {
-        vcardBtn.onclick = function(e) {
-          e.preventDefault();
-          downloadVCard(profile);
-        };
+    function setButtonState(btnEl, href){
+      if(!btnEl) return;
+      if(href && href.trim() !== '' && href !== '#'){
+        btnEl.classList.remove('disabled');
+        btnEl.href = href;
+      } else {
+        btnEl.classList.add('disabled');
+        btnEl.href = '#';
       }
     }
 
-    // Genera y descarga vCard
-    function downloadVCard(profile) {
-      const lines = [
-        'BEGIN:VCARD',
-        'VERSION:3.0',
-        'FN:' + (profile.name || ''),
-        profile.phone ? ('TEL;TYPE=CELL:' + profile.phone) : '',
-        profile.email ? ('EMAIL;TYPE=INTERNET:' + profile.email) : '',
-        profile.linkedin ? ('URL:' + profile.linkedin) : '',
-        'END:VCARD'
-      ].filter(Boolean).join('\n');
+    function renderProfile(profile){
+      // defaults to show something
+      const defaultProfile = { name:'Nombre Por Defecto', photo:'img/foto_default.jpg', linkedin:'#', phone:'', email:'' };
+      profile = profile || defaultProfile;
 
-      const blob = new Blob([lines], { type: 'text/vcard;charset=utf-8' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = (profile.name ? profile.name.replace(/\s+/g,'_') : 'contacto') + '.vcf';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
+      const nameShell = safeGet('nameShell');
+      if(nameShell) nameShell.innerText = profile.name || defaultProfile.name;
+
+      const photoEl = safeGet('photo');
+      if(photoEl){
+        photoEl.src = profile.photo || defaultProfile.photo;
+        photoEl.alt = 'Foto de ' + (profile.name || 'perfil');
+      }
+
+      setButtonState(safeGet('linkedinBtn'), profile.linkedin || '#');
+
+      // Contacto: tel
+      let telHref = '';
+      if(profile.phone && profile.phone.trim() !== '') telHref = 'tel:' + profile.phone.replace(/\s+/g,'');
+      setButtonState(safeGet('contactBtn'), telHref);
+
+      // Email
+      let mailHref = '';
+      if(profile.email && profile.email.trim() !== '') mailHref = 'mailto:' + profile.email;
+      setButtonState(safeGet('emailBtn'), mailHref);
     }
 
-    // Loader robusto: soporta { "profiles": {...} } o top-level { "SH001": {...} }
-    async function loadProfiles() {
-      try {
-        const resp = await fetch(DATA_JSON + '?_=' + Date.now(), { cache: 'no-store' });
-        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    async function loadProfiles(){
+      try{
+        const resp = await fetch(DATA_JSON + '?_=' + Date.now(), { cache:'no-store' });
+        if(!resp.ok) throw new Error('HTTP ' + resp.status);
         const json = await resp.json();
         console.log('data.json ->', json);
 
-        // Normalizar estructura:
-        let dataObj;
-        if (json && json.profiles && typeof json.profiles === 'object') {
+        let dataObj = null;
+        if(json && json.profiles && typeof json.profiles === 'object'){
           dataObj = json.profiles;
-          if (json.default && !dataObj.default) dataObj.default = json.default;
+          if(json.default && !dataObj.default) dataObj.default = json.default;
         } else {
-          dataObj = json; // top-level
+          dataObj = json; // top-level keys
         }
 
         const id = getIdFromUrl();
         const profile = (dataObj && (dataObj[id] || dataObj.default)) ? (dataObj[id] || dataObj.default) : null;
-        if (!profile) console.warn('Perfil no encontrado para id=', id);
-
+        if(!profile) console.warn('Perfil no encontrado para id=', id);
         renderProfile(profile);
-      } catch (err) {
-        console.error('Error cargando data.json:', err);
-        // fallback
+      } catch(e){
+        console.error('Error cargando data.json:', e);
         renderProfile(null);
       }
     }
