@@ -13,43 +13,61 @@
       --muted:#6b6b6b;
       --card-shadow: 0 8px 20px rgba(0,0,0,0.12);
       --radius:18px;
+      --name-font-size:1.15rem;
     }
 
     *{box-sizing:border-box;margin:0;padding:0}
     html,body{height:100%;font-family: "Arial",sans-serif;background:var(--white);color:#111}
 
-    /* Barra superior */
+    /* Barra superior - mayor altura para separar del nombre */
     .topbar{
       background:var(--ean-green);
-      padding:18px 20px;
+      padding:20px 20px 26px;        /* bottom padding mayor para separar */
       display:flex;
       align-items:center;
       justify-content:space-between;
+      position:relative;            /* para poder centrar el titulo absolute */
     }
     .topbar .logo {
-      height:64px;
+      height:62px;
       width:auto;
       display:block;
+    }
+
+    /* Texto centrado en la barra */
+    .topbar-title {
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      color:var(--white);
+      font-weight:800;
+      letter-spacing:1px;
+      font-size:1.05rem;
+      text-transform:uppercase;
+      pointer-events:none;
+      opacity:0.95;
     }
 
     /* Contenedor principal */
     .wrapper{
       max-width:420px;
-      margin: 20px auto 40px;
-      padding: 20px;
+      margin: 18px auto 40px;
+      padding: 8px 20px;
     }
 
+    /* Nombre: menos solapado y con mayor padding */
     .name-card{
-      margin: -40px auto 18px; /* upa to overlap with topbar */
+      margin: -22px auto 18px; /* menor negativo para que no quede pegado */
       width: calc(100% - 40px);
       background: rgba(40,167,69,0.14);
       border-radius: 999px;
       padding: 16px 20px;
       text-align:center;
       font-weight:700;
-      font-size:1.15rem;
+      font-size:var(--name-font-size);
       color: var(--white);
       box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+      line-height:1.25;
     }
 
     /* Main content (white card) */
@@ -89,28 +107,28 @@
 
     .btn .icon{width:20px;height:20px;display:inline-block;fill:#fff}
 
-    /* small footer spacing (we removed contact info area visual) */
     .spacer{height:6px}
 
     @media (max-width:440px){
       .wrapper{padding:12px}
-      .topbar{padding:14px}
-      .topbar .logo{height:56px}
-      .name-card{font-size:1rem;margin-top:-34px}
+      .topbar{padding:16px 14px 22px}
+      .topbar .logo{height:54px}
+      .name-card{font-size:1rem;margin-top:-18px}
       .photo{width:78%}
       .btn{font-size:0.98rem;padding:11px}
     }
   </style>
 </head>
 <body>
-  <!-- TOP BAR con logos -->
+  <!-- TOP BAR con logos y titulo centrado -->
   <header class="topbar" role="banner" aria-label="Cabecera">
     <img src="img/logo_ean.png" alt="Logo EAN" class="logo" />
+    <div class="topbar-title">Ingeniería</div>
     <img src="img/logo_facultad.png" alt="Logo Facultad" class="logo" />
   </header>
 
   <main class="wrapper" role="main">
-    <!-- Nombre que queda sobre tarjeta -->
+    <!-- Nombre que ahora está más separado de la barra -->
     <div id="nameShell" class="name-card" aria-live="polite">Nombre Por Defecto</div>
 
     <section class="card" aria-label="Perfil">
@@ -140,12 +158,6 @@
   </main>
 
   <script>
-    /* Robust loader + render:
-       - Examina data.json (soporta either: { "profiles": {...} } OR top-level { "SH001": {...} })
-       - Rellena LinkedIn, Contacto (tel) y Email (mailto).
-       - Si un dato falta, el botón correspondiente se desactiva (no rompe).
-    */
-
     const DATA_JSON = 'data.json';
     const DEFAULT_ID = 'SH001';
 
@@ -164,7 +176,6 @@
     }
 
     function renderProfile(profile){
-      // defaults to show something
       const defaultProfile = { name:'Nombre Por Defecto', photo:'img/foto_default.jpg', linkedin:'#', phone:'', email:'' };
       profile = profile || defaultProfile;
 
@@ -179,12 +190,10 @@
 
       setButtonState(safeGet('linkedinBtn'), profile.linkedin || '#');
 
-      // Contacto: tel
       let telHref = '';
       if(profile.phone && profile.phone.trim() !== '') telHref = 'tel:' + profile.phone.replace(/\s+/g,'');
       setButtonState(safeGet('contactBtn'), telHref);
 
-      // Email
       let mailHref = '';
       if(profile.email && profile.email.trim() !== '') mailHref = 'mailto:' + profile.email;
       setButtonState(safeGet('emailBtn'), mailHref);
@@ -202,7 +211,7 @@
           dataObj = json.profiles;
           if(json.default && !dataObj.default) dataObj.default = json.default;
         } else {
-          dataObj = json; // top-level keys
+          dataObj = json;
         }
 
         const id = getIdFromUrl();
@@ -219,4 +228,5 @@
   </script>
 </body>
 </html>
+
 
