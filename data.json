@@ -398,7 +398,21 @@
       "photo": "img/foto_SH057.jpg",
       "linkedin": "https://www.linkedin.com/in/merly-daniela-sanchez-avila-a9994a157/",
       "phone": "+57 313 3812771",
-      "email": "mdsanchez@universidadean.edu.co"      
+      "email": "mdsanchez@universidadean.edu.co"
+    },
+    "SH058": {
+      "name": "JAIME ALBERTO OCHOA DURÁN",
+      "photo": "img/foto_SH058.jpg",
+      "linkedin": "https://www.linkedin.com/in/jaimeochoa-manager/",
+      "phone": "+57 314 5564049",
+      "email": "jaochoa@universidadean.edu.co"
+    },
+    "SH059": {
+      "name": "DANIEL FERNANDO LADINO CORTES",
+      "photo": "img/foto_SH059.jpg",
+      "linkedin": "https://www.linkedin.com/in/merly-daniela-sanchez-avila-a9994a157/",
+      "phone": "+57 3113475202",
+      "email": "dfladino@universidadean.edu.co"
     }
   },
 
