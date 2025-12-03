@@ -11,7 +11,7 @@
       "name": "LORENA PIÑEIRO CORTES",
       "photo": "img/foto_SH002.jpg",
       "linkedin": "https://www.linkedin.com/in/lorena-pineiro-cortes",
-      "phone": "+57 3000000000",
+      "phone": "+57 321 2406473",
       "email": "llpineiro@universidadean.edu.co"
     },
     "SH003": {
@@ -328,7 +328,7 @@
       "photo": "img/foto_SH047.jpg",
       "linkedin": "https://www.linkedin.com/in/mauricio-bolivar-81a9ab67/",
       "phone": "+57 3107593205",
-      "email": "jdtorres@universidadean.edu.co"
+      "email": "mabolivar@universidadean.edu.co"
     },
     "SH048": {
       "name": "WILLIAM LOPEZ CASTRILLON",
@@ -357,6 +357,27 @@
       "linkedin": "https://www.linkedin.com/in/rgomezrosso/",
       "phone": "+57 3001141082",
       "email": "rigomez@universidadean.edu.co"
+    },
+    "SH052": {
+      "name": "SANDRA DEL PILAR FORERO",
+      "photo": "img/foto_SH052.jpg",
+      "linkedin": "https://www.linkedin.com/in/sandra-del-pilar-forero-poveda-70300425/",
+      "phone": "+57 3001141082",
+      "email": "spforero@universidadean.edu.co"
+    },
+    "SH053": {
+      "name": "KAREM MILENA RUIZ",
+      "photo": "img/foto_SH053.jpg",
+      "linkedin": "https://www.linkedin.com/in/karem-milena-a20bbb1a9/",
+      "phone": "+57 3132811824",
+      "email": "kmruiz@universidadean.edu.co"
+    },
+    "SH054": {
+      "name": "KAREN JOHANNA SANCHEZ MEDINA",
+      "photo": "img/foto_SH054.jpg",
+      "linkedin": "https://www.linkedin.com/in/rgomezrosso/",
+      "phone": "+57 3103090835",
+      "email": "Kjsanchez@universidadean.edu.co"      
     }
   },
 
